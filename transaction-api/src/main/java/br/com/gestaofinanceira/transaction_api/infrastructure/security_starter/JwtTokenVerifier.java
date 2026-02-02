@@ -17,7 +17,7 @@ public class JwtTokenVerifier implements TokenVerifier {
     @Value("${jwt.secret}")
     private String secret;
 
-    @Value("${jwt.issuer:service-user}")
+    @Value("${jwt.issuer}")
     private String issuer;
 
     @Override
